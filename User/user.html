@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="Desain/style_user.css">
+    <link rel="stylesheet" href="Desain/bootstrap.min.css">
+    <link rel="icon" href="Desain/pictures/fubura.png">
+    <!--End Style-->
+    <title>Welcome</title>
+</head>
+
+<body>
+    <!--Loading Nanoja-->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!--End Loading Nanoja-->
+    <!---Header Degojaru-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand thfont" href="user.html">
+                <font class="font1">Legok<font class="font2">Nangka</font>
+                </font>
+            </a>
+            <div class="tabel navbar-collapse">
+                <button class="tombol" data-target="modal-1">About</button>
+                <a class="link-to link-to1" href="pengumuman.html">Pengumuman</a>
+                <button class="tombol" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Jadwal Ronda</button>
+                <button class="tombol tombol1" data-bs-toggle="offcanvas"
+                    data-bs-target="#jadwal_posyandu" aria-controls="offcanvas-top">Jadwal
+                    Posyandu</button>
+            </div>
+        </div>
+    </nav>
+    <!---End Header-->
+    <!--------------->
+    <!---Body-->
+    <div class="container">
+        <div class="box">
+            <h5 class="tbody">LEGOK NANGKA</h5>
+            <div class="gambar"><img width="500px" height="400px" src="Desain/pictures/Gambar_Home.png"></div>
+            <font class="tbody1">Kita Membantu</font><br>
+            <font class="tbody1">Masyarakat Yang</font><br>
+            <font class="tbody1">Membutuhkan Bantuan</font><br>
+            <font class="tbody2">Menyediakan Layanan :</font>
+            <ul class="tbody3">
+                <li>Pendataan Warga Baru</li>
+                <li>Pembangunan Rumah Baru</li>
+                <li>Pelayanan Keluhan,DLL</li>
+            </ul>
+            <div class="box1">
+                <a class="button" href="https://wa.me/6281210080107" target="_blank"><span>Contact Us!</span></a>
+            </div>
+        </div>
+        <!---End Body-->
+        <!------------->
+        <!----Modal dan canvas---->
+        <!--Modal About-->
+        <div id="modal-1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>About</h3>
+                <font class="font3">Website Ini Saya Buat Untuk Membantu Seseorang Yang Ingin Tinggal Di Kampung Legok
+                    Nangka</font><br><br>
+                <font class="font3">Alamat Kampung:</font><br>
+                <font class="font3">KP.Legok Nangka,Desa Panyirapan, Kec. Soreang, Kabupaten Bandung, Jawa Barat 40915
+                </font>
+            </div>
+        </div>
+        <!--Modal About-->
+        <!--Canvas Jadwal Ronda-->
+        <div class="offcanvas offcanvas-top canvas" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h3 id="offcanvasTopLabel">Jadwal Ronda</h3>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
+    </div>
+    <!--Canvas Jadwal Ronda-->
+    <!--Canvas Jadwal Posyandu-->
+    <div class="offcanvas offcanvas-top canvas" tabindex="-1" id="jadwal_posyandu" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h3 id="offcanvasTopLabel">Jadwal Posyandu</h3>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    </div>
+
+    <!--Canvas Jadwal Posyandu-->
+    <!----End Modal-->
+    <!-------------------->
+    <!--Java Sekrip Desu-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=map"></script>
+    <!----End Java Sekrip Desu-->
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+body,
+html {
+	color: #ffffff;
+	background-color: #28293E;
+}
+
+@media (max-width: 1000px) {
+	.gambar {
+		display: none;
+	}
+
+	.button {
+		display: none;
+	}
+
+	.tabel{
+		
+	}
+}
+
+/*LOADING*/
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #000;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 1s linear infinite;
+	-webkit-animation: loader 1s linear infinite;
+	animation-duration: 0.6s;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+/*END LOADING*/
+/*----------------*/
+/*HEADER*/
+.thfont {
+	font-weight: 700;
+	font-size: 20pt;
+	font-style: oblique;
+}
+
+.font1 {
+	color: #FF6363;
+}
+
+.font2 {
+	color: #FAF3F3;
+}
+
+.tabel {
+	border: 1px;
+	font-family: sans-serif;
+	margin: 0 15%;
+}
+
+.baris{
+	display: none;
+}
+
+.link-to {
+	color: white;
+	text-decoration: none;
+}
+
+.link-to1{
+	margin: 0 30px;
+}
+
+.link-to:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.tombol {
+	background-color: #28293E;
+	color: white;
+	border: none;
+}
+
+.tombol1{
+	margin: 0 30px 0;
+}
+
+/*BODY*/
+.tbody {
+	color: #EF6D58;
+}
+
+.tbody1 {
+	color: white;
+	font-weight: 700;
+	font-size: 30pt;
+}
+
+.tbody2 {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.tbody3 {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.box {
+	border: 1px;
+	padding: 10px;
+	width: 100%;
+	margin: 17% 0;
+}
+
+.box1 {
+	border: 1px;
+	padding: 10px;
+	width: max-content;
+	margin-left: 2%;
+	margin-top: -2%;
+}
+
+.button {
+	border: none;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+	background-color: #222;
+	padding: 17px 60px;
+	margin: 0 auto;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+	text-decoration: none;
+}
+
+.button span {
+	position: relative;
+	z-index: 1;
+}
+
+.button::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 490%;
+	width: 140%;
+	background: #78c7d2;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.button:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.button:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.gambar {
+	border: 1px;
+	width: max-content;
+	float: right;
+}
+
+/*MODAL*/
+.modal {
+	display: none;
+	/* Sembunyikan modal secara default */
+	position: fixed;
+	/* Tampilkan modal di atas content */
+	z-index: 1;
+	/* Menempatkan modal di atas semua elemen lain */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Lebar modal mengisi seluruh layar */
+	height: 100%;
+	/* Tinggi modal mengisi seluruh layar */
+	overflow: auto;
+	/* Tambahkan scrolling jika isi modal melebihi ukuran layar */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Tambahkan efek transparan pada background */
+}
+
+.modal-content {
+	background-color: #28293E;
+	margin: 15% auto;
+	/* Posisikan isi modal ke tengah-tengah layar */
+	padding: 20px;
+	border: 1px solid #888;
+	width: max-content;
+	/* Lebar isi modal */
+}
+
+/* Styling untuk tombol close */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.font3 {
+	color: white;
+	font-weight: 700;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*off canvas*/
+.canvas {
+	background-color: #28293E;
+}

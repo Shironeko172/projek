@@ -1,0 +1,158 @@
+body,
+html {
+    background-color: #28293E;
+    color: white;
+}
+
+/*HEADER*/
+
+.heder {
+    width: 100%;
+    height: 280pt;
+}
+
+.boxheader {
+    border: 1px;
+    width: 100%;
+    margin: 0.5% 0;
+}
+
+.thfont {
+    font-weight: 700;
+    font-size: 20pt;
+    font-style: oblique;
+    display: inline;
+}
+
+.font1 {
+    color: #FF6363;
+}
+
+.font2 {
+    color: #FAF3F3;
+}
+
+.font4 {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40pt;
+}
+
+.font5{
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23pt;
+    margin: 5% 0%;
+}
+
+.tabel {
+    border: 1px;
+    font-family: sans-serif;
+    margin: 0 13%;
+    display: inline;
+}
+
+.link-to {
+    color: white;
+    text-decoration: none;
+}
+
+.link-to:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tombol {
+    background-color: #28293E;
+    color: white;
+    border: none;
+}
+
+.boxheder {
+    border: 1px;
+    margin: 60px 0;
+}
+
+.table1 {
+    width: 100%; /* Lebar tabel mengisi seluruh lebar kontainer */
+    border-collapse: collapse; /* Menggabungkan garis-garis antar sel */
+    text-align: center; /* Membuat sel-sel berada di tengah */
+  }
+  
+th, td {
+    padding: 0px; /* Menambahkan jarak antara teks dan tepi sel */
+    border: 1px; /* Menambahkan garis antar sel */
+  }
+
+/*END HEADER*/
+/*MODAL DAN CANVAS*/
+.modal {
+    display: none;
+    /* Sembunyikan modal secara default */
+    position: fixed;
+    /* Tampilkan modal di atas content */
+    z-index: 1;
+    /* Menempatkan modal di atas semua elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Lebar modal mengisi seluruh layar */
+    height: 100%;
+    /* Tinggi modal mengisi seluruh layar */
+    overflow: auto;
+    /* Tambahkan scrolling jika isi modal melebihi ukuran layar */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Tambahkan efek transparan pada background */
+}
+
+.modal-content {
+    background-color: #28293E;
+    margin: 15% auto;
+    /* Posisikan isi modal ke tengah-tengah layar */
+    padding: 20px;
+    border: 1px solid #888;
+    width: max-content;
+    /* Lebar isi modal */
+}
+
+/* Styling untuk tombol close */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.font3 {
+    color: white;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*off canvas*/
+.canvas {
+    background-color: #28293E;
+}
+
+/*BODY*/
+.boxbd{
+    color: black;
+    background-color: #FDF0E9;
+    padding: 10px 0px;
+    height: 1000px;
+    max-height: 1000vh;
+    width: 100%;
+}
+
+.table2{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
